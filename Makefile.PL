@@ -1,14 +1,33 @@
+# $Id: Makefile.PL 79 2008-09-13 10:17:12Z cfaerber $
+
+use 5.006;
+
+use utf8;
 use ExtUtils::MakeMaker;
+
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'		=> 'Net::IDN::Encode',
-    'VERSION_FROM'	=> 'Encode.pm', # finds $VERSION
+    'VERSION_FROM'	=> 'lib/Net/IDN/Encode.pm', # finds $VERSION
     'PREREQ_PM'		=> {
-		'Net::IDN::Nameprep' => 0.02,
-		'IDNA::Punycode' => 0.02,
+		'Unicode::Stringprep' => 1.00,
 	},
-    ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM => 'Encode.pm', # retrieve abstract from module
-       AUTHOR     => 'Claus Färber <perl@faerber.muc.de>') : ()),
+    ($] >= 5.005 ? (	## Add these new keywords supported since 5.005
+       ABSTRACT => 'modules for handling of Internationalised Domain Names in Applications (IDNA)',
+       AUTHOR   => 'Claus Faerber <CFAERBER@cpan.org>',
+       LICENSE  => 'perl',
+      ) : ()),
 );
+
+sub MY::postamble {
+return <<EOF
+release: release-sf release-cpan
+
+release-cpan:
+	cpan-upload \$(DISTVNAME).tar\$(SUFFIX)
+
+release-sf:
+	sf-upload -groupid 112466 -packageid 121685 -r \$(VERSION) -cf Changes -nf README -f \$(DISTVNAME).tar\$(SUFFIX)
+EOF
+}

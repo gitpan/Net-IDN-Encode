@@ -1,12 +1,18 @@
-Encode.pm
-Makefile.PL
 README
 Changes
+COPYING
+Makefile.PL
 MANIFEST
-t/00_use.t
-t/12_domain_to_unicode.t
-t/11_domain_to_ascii.t
-t/21_email_to_ascii.t
-t/22_email_to_unicode.t
-t/01_to_ascii.t
-t/02_to_unicode.t
+lib/Net/IDN/Encode.pm
+lib/Net/IDN/Nameprep.pm
+lib/Net/IDN/Punycode.pm
+lib/IDNA/Punycode.pm
+t/00use.t
+t/01use_extra.t
+t/encode_bytes.t
+t/encode_utf8.t
+t/nameprep_vec.t
+t/punycode_vec.t
+t/zidna_punyc_prefix.t
+t/zidna_punyc_raw.t
+META.yml                                 Module meta-data (added by MakeMaker)
