@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Net-IDN-Encode
-version:             0.99_20080913
+version:             0.99_20080914
 abstract:            modules for handling of Internationalised Domain Names in Applications (IDNA)
 license:             perl
 author:              
