@@ -1,5 +1,8 @@
 Revision history for Perl extension Net::IDN::Encode
 
+0.99_20080913 Sun Sep 13 12:00:00 2008
+	- fixed perl 5.6.x (no warnings 'utf8')
+
 0.99_20080913 Sat Sep 13 12:00:00 2008
 	- require perl version 5.6.0 instead of 5.6.6
 	- skip more tests in lower perl versions
@@ -35,4 +38,4 @@ Revision history for Perl extension Net::IDN::Encode
 0.01  Sun May 30 00:00:00 2004
 	- first release
 
-$Id: Changes 77 2008-09-13 09:06:30Z cfaerber $
+$Id: Changes 81 2008-09-14 08:53:01Z cfaerber $

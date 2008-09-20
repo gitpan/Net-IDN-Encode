@@ -1,4 +1,4 @@
-# $Id: Punycode.pm 78 2008-09-13 10:12:34Z cfaerber $
+# $Id: Punycode.pm 81 2008-09-14 08:53:01Z cfaerber $
 
 package Net::IDN::Punycode;
 

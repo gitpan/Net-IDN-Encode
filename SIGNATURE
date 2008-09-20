@@ -1,0 +1,40 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 ae1b1a80a9aa0084f42bf66d601a84c4be355f2b Changes
+SHA1 ac7298e4820e1f72c26ff336a914298ae68ce086 MANIFEST
+SHA1 fe4127d0f71c99fcfaa9c90e3e400f1e5732879d META.yml
+SHA1 cc28040ddaafba85196a41bf6f8cce92a502cd48 Makefile.PL
+SHA1 f17f6f72d15671ccdddac226ae68a0aef1033338 README
+SHA1 aaffc0ee8e16c5ad2e8ae318452d1e1b2a08ce55 lib/IDNA/Punycode.pm
+SHA1 b876ddc1cb09ba40aae5d9d3ebb14b0976e67f73 lib/Net/IDN/Encode.pm
+SHA1 44ef6423285abe9287c7fad216447e11dcb231b4 lib/Net/IDN/Nameprep.pm
+SHA1 361c45d457e5208925b3bf1cf3479499ead6c3c3 lib/Net/IDN/Punycode.pm
+SHA1 9c62d7ccf2f8635eaa10e729a1ce226532d85bf5 t/00use.t
+SHA1 6156a56aa922246ec1f4390ddf0887d65565d28c t/01use_extra.t
+SHA1 42a3f05dcf39ae3ccd10f04c1608a1b1a0b24bc0 t/encode_bytes.t
+SHA1 0288bb617d41ddaa73090698fe5180301a40481f t/encode_utf8.t
+SHA1 6a0068e564c695d06490fd0a6458d9b49a67286e t/nameprep_vec.t
+SHA1 b04a8860171f9576b4ca806cf23eb79d1813ebf1 t/punycode_vec.t
+SHA1 fb823b8a3a0123f4bacd6e891f6d368353bd2b39 t/zidna_punyc_prefix.t
+SHA1 c49a2a95aa318d6b0800551201c7e98365f5adef t/zidna_punyc_raw.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkjUT94ACgkQSKUOY2OWgPANswCdGxB+cyCscq+lcrEDgYHA6ZNB
+egUAn0QuonfkHYXnwi8nJXgsDCKBU3p7
+=tvm1
+-----END PGP SIGNATURE-----

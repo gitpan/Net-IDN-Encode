@@ -1,4 +1,4 @@
-# $Id: zidna_punyc_prefix.t 77 2008-09-13 09:06:30Z cfaerber $
+# $Id: zidna_punyc_prefix.t 81 2008-09-14 08:53:01Z cfaerber $
 
 use utf8;
 use strict;

@@ -15,3 +15,4 @@ t/punycode_vec.t
 t/zidna_punyc_prefix.t
 t/zidna_punyc_raw.t
 META.yml                                 Module meta-data (added by MakeMaker)
+SIGNATURE                                Public-key signature (added by MakeMaker)
