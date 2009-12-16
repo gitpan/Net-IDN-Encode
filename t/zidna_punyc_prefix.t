@@ -1,9 +1,9 @@
-# $Id: zidna_punyc_prefix.t 81 2008-09-14 08:53:01Z cfaerber $
-
 use utf8;
 use strict;
 
-use Test::More tests => 16;
+use Test::More tests => 17;
+use Test::NoWarnings;
+
 use IDNA::Punycode;
 
 is(encode_punycode('faerber'),'faerber');

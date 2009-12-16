@@ -1,9 +1,9 @@
-# $Id: punycode_vec.t 77 2008-09-13 09:06:30Z cfaerber $
-
 use strict;
 use utf8;
 
 use Test::More;
+use Test::NoWarnings;
+
 use Net::IDN::Punycode;
 
 our @idna = (
@@ -101,7 +101,7 @@ our @idna = (
     "b1abfaaepdrnnbgefbadotcwatmq2g4l", 0, 0, 1, 1 ],
    );
 
-plan tests => ($#idna+1)*2;
+plan tests => ($#idna+1)*2 + 1;
 
 
 foreach my $test (@idna) 

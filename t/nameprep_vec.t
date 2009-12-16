@@ -1,9 +1,9 @@
-# $Id: nameprep_vec.t 77 2008-09-13 09:06:30Z cfaerber $
-
 use strict;
 use utf8;
 
 use Test::More;
+use Test::NoWarnings;
+
 use Net::IDN::Nameprep;
 
 no warnings 'utf8';
@@ -222,7 +222,7 @@ our @strprep = (
      ],
    );
 
-plan tests => ($#strprep+1);
+plan tests => ($#strprep+1) + 1;
 
 foreach my $test (@strprep) 
 {

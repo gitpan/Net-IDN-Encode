@@ -1,5 +1,6 @@
 README
 Changes
+Build.PL
 Makefile.PL
 MANIFEST
 lib/Net/IDN/Encode.pm
@@ -14,5 +15,6 @@ t/nameprep_vec.t
 t/punycode_vec.t
 t/zidna_punyc_prefix.t
 t/zidna_punyc_raw.t
-META.yml                                 Module meta-data (added by MakeMaker)
-SIGNATURE                                Public-key signature (added by MakeMaker)
+LICENSE
+META.yml
+SIGNATURE    Added here by Module::Build
