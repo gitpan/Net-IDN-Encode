@@ -1,8 +1,8 @@
 ---
 name: Net-IDN-Encode
-version: 0.99_20091216
+version: 0.99_20091231
 author:
-  - 'Claus FE<auml>rber <CFAERBER@cpan.org>'
+  - 'Claus Färber <CFAERBER@cpan.org>'
 abstract: Internationalizing Domain Names in Applications (S<RFC 3490>)
 license: perl
 resources:
@@ -11,25 +11,23 @@ build_requires:
   Test::More: 0
   Test::NoWarnings: 0
 requires:
-  Unicode::Stringprep: 0.3
-  perl: 5.006
-recommends:
+  Unicode::Stringprep: 1
   perl: 5.008003
 configure_requires:
   Module::Build: 0.35
 provides:
   IDNA::Punycode:
     file: lib/IDNA/Punycode.pm
-    version: 0.99_20091216
+    version: 0.99_20091231
   Net::IDN::Encode:
     file: lib/Net/IDN/Encode.pm
-    version: 0.99_20091216
+    version: 0.99_20091231
   Net::IDN::Nameprep:
     file: lib/Net/IDN/Nameprep.pm
-    version: 0.99_20091216
+    version: 0.99_20091231
   Net::IDN::Punycode:
     file: lib/Net/IDN/Punycode.pm
-    version: 0.99_20091216
+    version: 0.99_20091231
 no_index:
   directory: eg
 generated_by: Module::Build version 0.35
