@@ -1,6 +1,6 @@
 ---
 name: Net-IDN-Encode
-version: 0.999_20100110
+version: 0.999_20090112
 author:
   - 'Claus Färber <CFAERBER@cpan.org>'
 abstract: Internationalizing Domain Names in Applications (RFC 3490)
@@ -17,10 +17,12 @@ configure_requires:
 provides:
   Net::IDN::Encode:
     file: lib/Net/IDN/Encode.pm
-    version: 1.00
+    version: 0.999_20090112
   Net::IDN::Punycode:
     file: lib/Net/IDN/Punycode.pm
-    version: 0.999_20100110
+    version: 0.999_20100112
+  Net::IDN::PunycodePP:
+    file: lib/Net/IDN/PunycodePP.pm
 no_index:
   directory: eg
 generated_by: Module::Build version 0.35

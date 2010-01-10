@@ -6,7 +6,7 @@ WriteMakefile
           'INSTALLDIRS' => 'site',
           'NAME' => 'Net::IDN::Encode',
           'EXE_FILES' => [],
-          'VERSION_FROM' => 'lib/Net/IDN/Punycode.pm',
+          'VERSION_FROM' => 'lib/Net/IDN/Encode.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
                            'Test::NoWarnings' => 0,
