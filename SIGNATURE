@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.61.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,29 +14,24 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 7d534622c881aaf52498630aaa90c8fc4c7d6e50 Build.PL
-SHA1 b06ef63f5891853cf878b2c6fe986db9055a6140 Changes
-SHA1 5e8892b211d2e08c1b98d3a033b4d8439158339e LICENSE
-SHA1 19434cc8f579d6cfd9adc1b5e91572b6ff351e33 MANIFEST
-SHA1 1adfadbd85b48c421078095326d0b49ea0e57f72 META.yml
-SHA1 5962418699bf07ec8a3a8ff70057c1f910e2152d Makefile.PL
-SHA1 a87566f0c784efc2cc1ef70d5999ec0576fbc13b README
-SHA1 adf79f464749094759e73335159d53e93923fbba lib/IDNA/Punycode.pm
-SHA1 468c61e67b927a45aa156743f6b4428f5954338d lib/Net/IDN/Encode.pm
-SHA1 0849e05c5843faa723ff70475e8c6fedb8035486 lib/Net/IDN/Nameprep.pm
-SHA1 14399e19aedcc3f6d06d7459a5c2e0f6fa4be3dc lib/Net/IDN/Punycode.pm
-SHA1 0584a4e2c734107cf5fe931f961bca8e6bf338cc t/00use.t
-SHA1 2a3c5cdbf945439d12cc9e030cda9820799e6083 t/01use_extra.t
+SHA1 7ccf5db2388681136ead9546b74f03f669ccc2ba Build.PL
+SHA1 4429d85654583c7ed79b51ac953c7c006f6cc91b Changes
+SHA1 9b37c74ac55bf4a1d347a873f9936ca24cab4f3b LICENSE
+SHA1 bfdef38b723dd0ca06423227c5422bdadeee2494 MANIFEST
+SHA1 c8ab464e04637bfd4ffacfa9930a3d68580261ad META.yml
+SHA1 67e9b1064d143e20a63d484a8355a047377f4438 Makefile.PL
+SHA1 a9bd2da838ae590561da7e3bfcbf5070a00df91d README
+SHA1 594e449de330488db16948344910a7275517faa8 lib/Net/IDN/Encode.pm
+SHA1 97c40fa24d727313ef755baf0ecc37c5de0f624b lib/Net/IDN/Punycode.pm
+SHA1 78a7c2a450d8bdaa4485f285200115e7b6a718f9 t/00use.t
 SHA1 a31dcef2c30f4074fe50bcb1fec80bcfa54a3051 t/encode_bytes.t
 SHA1 9fab87f38ab12b919a21c689ecf0bb16e9355ad7 t/encode_utf8.t
-SHA1 3134ed672276a27e7da380a53247d74ce28c17c0 t/nameprep_vec.t
+SHA1 be2b7f2ea055acfcd4a7668a54b12266c2dac3dc t/nameprep_vec.t
 SHA1 f8a7ee4ad1b2caa359b289c0ff45d4ccf8efe796 t/punycode_vec.t
-SHA1 d6948bf3fd954081da32741e760b2190f576828a t/zidna_punyc_prefix.t
-SHA1 5a73c5ce7e007adadb7e8601f69fc174c3e6aa72 t/zidna_punyc_raw.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (Darwin)
 
-iEYEARECAAYFAks5G9IACgkQSKUOY2OWgPDx1ACfTYL2h/OZ1x4MbBqFfZa4gm3U
-BkcAniG1xriAZwnBnFaCKLTZMJzLuO8G
-=5IH6
+iEYEARECAAYFAktJQfwACgkQSKUOY2OWgPAjTgCfaVKSHXR5eU244hbP/yVBedJ2
+KCIAnA0DMBfqcwNjKAW5FRmTazuG5QmR
+=oNSr
 -----END PGP SIGNATURE-----
