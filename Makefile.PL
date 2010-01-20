@@ -9,8 +9,8 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Net/IDN/Encode.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
-                           'Test::NoWarnings' => 0,
-                           'Unicode::Stringprep' => 1
+                           'Net::IDN::Nameprep' => 1,
+                           'Test::NoWarnings' => 0
                          }
         )
 ;
