@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.64.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,28 +14,28 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 474fce1ed2e38f3c705a8cc599e490b7ed3a71f8 Build.PL
-SHA1 aeb66bc352b63cca3c610098d84fe07d5accd92c Changes
+SHA1 810a58a3b21acec80622aef64443759a435e44fb Build.PL
+SHA1 777f5f3c38d7ef4f41d6a4422f42bacfd05f3908 Changes
 SHA1 9b37c74ac55bf4a1d347a873f9936ca24cab4f3b LICENSE
 SHA1 99f331c7ec6f8d266c61f48a406675280826e743 MANIFEST
-SHA1 3e31ef79fb9475083e0b474e7852e8a9ec84fd2b META.yml
-SHA1 885f6e35ca0192ceff0f9c9aefbffb01a99ed545 Makefile.PL
+SHA1 aaf5f14f4207deb37ddb8854982e8b837167db74 META.yml
+SHA1 9326c90ecebb68298a82f3d5f9b4ee85f2e6959e Makefile.PL
 SHA1 a9bd2da838ae590561da7e3bfcbf5070a00df91d README
 SHA1 c7825316b854216c50a88b5750c3a08a91e56695 eg/hello_idn.pl
 SHA1 da626e4a67218dc2ed50b4a5b45b258078db0681 eg/hello_idn_email.pl
-SHA1 927d42e12ff801252835f44972439d6fddaed1e1 lib/Net/IDN/Encode.pm
+SHA1 3223d958e59d36f7bd805f4a86ab6aa0f3489d2e lib/Net/IDN/Encode.pm
 SHA1 c7eb9bb6f7e7fa689c036b2652468f8a3262a755 lib/Net/IDN/Punycode.pm
 SHA1 27ca89ca67dd1658680a51d4127956dcd8939374 lib/Net/IDN/Punycode.xs
 SHA1 b70ce6aa2f1c6c74835bc9fbc74c57fc03ea228a lib/Net/IDN/Punycode/PP.pm
 SHA1 2bba22129594f3cca49c30412b87943c20da2e61 t/00use.t
 SHA1 659313cde51535a32053b02c07991da57725c214 t/encode_bytes.t
-SHA1 ae0cbfa0e7dc67decc291775b8ebcb7a01c76311 t/encode_utf8.t
+SHA1 78814689bc54b23e9322c0634bf40fca264d29ed t/encode_utf8.t
 SHA1 ae777d8162fdfe9aa45d7f025ea3aafbdd029b74 t/punycode_vec-pp.t
 SHA1 bc123a000764e2c8f5a2ee94f3365dfe69a7e070 t/punycode_vec.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (Darwin)
 
-iEYEARECAAYFAktW62EACgkQSKUOY2OWgPDQeACdF8bR1bCN1dhxSJo9U8cAro11
-SQUAnRHotX+3PaIN52bk4sL2SHf5yJjE
-=sXAt
+iEYEARECAAYFAkxZbDQACgkQSKUOY2OWgPCAlQCfVNvs8ioBDNW0c4djqwhuu5ul
+eXwAoLUiDytNWjBXwczWT1ppAg32+9Ek
+=Co+e
 -----END PGP SIGNATURE-----
