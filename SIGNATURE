@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.66.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,16 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 810a58a3b21acec80622aef64443759a435e44fb Build.PL
-SHA1 777f5f3c38d7ef4f41d6a4422f42bacfd05f3908 Changes
-SHA1 9b37c74ac55bf4a1d347a873f9936ca24cab4f3b LICENSE
-SHA1 99f331c7ec6f8d266c61f48a406675280826e743 MANIFEST
-SHA1 aaf5f14f4207deb37ddb8854982e8b837167db74 META.yml
-SHA1 9326c90ecebb68298a82f3d5f9b4ee85f2e6959e Makefile.PL
+SHA1 7ace8f68d84850a46ae460a526fcf3995e3d7360 Build.PL
+SHA1 e4e3dda70b9282959924dd7a9a517d74322fc9fa Changes
+SHA1 db6132facac62a3a2dcc70d64533ba437679c966 LICENSE
+SHA1 9a8771dd41512191cfe711d403c33c1a52222917 MANIFEST
+SHA1 b18ee7e321b5574b2e35f48cde47861651c25fa8 META.json
+SHA1 f2f457744669a32bcf38c8a6a6ce9da16ae692cb META.yml
+SHA1 ca30d59a87c7f5d8160977b6335ca591c1bb5228 Makefile.PL
 SHA1 a9bd2da838ae590561da7e3bfcbf5070a00df91d README
 SHA1 c7825316b854216c50a88b5750c3a08a91e56695 eg/hello_idn.pl
 SHA1 da626e4a67218dc2ed50b4a5b45b258078db0681 eg/hello_idn_email.pl
-SHA1 3223d958e59d36f7bd805f4a86ab6aa0f3489d2e lib/Net/IDN/Encode.pm
+SHA1 263e6ec9caeb10bbbd7012c5e9463ba3d3d9bde2 lib/Net/IDN/Encode.pm
 SHA1 c7eb9bb6f7e7fa689c036b2652468f8a3262a755 lib/Net/IDN/Punycode.pm
 SHA1 27ca89ca67dd1658680a51d4127956dcd8939374 lib/Net/IDN/Punycode.xs
 SHA1 b70ce6aa2f1c6c74835bc9fbc74c57fc03ea228a lib/Net/IDN/Punycode/PP.pm
@@ -33,9 +34,9 @@ SHA1 78814689bc54b23e9322c0634bf40fca264d29ed t/encode_utf8.t
 SHA1 ae777d8162fdfe9aa45d7f025ea3aafbdd029b74 t/punycode_vec-pp.t
 SHA1 bc123a000764e2c8f5a2ee94f3365dfe69a7e070 t/punycode_vec.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (Darwin)
+Version: GnuPG v1.4.11 (Darwin)
 
-iEYEARECAAYFAkxZbDQACgkQSKUOY2OWgPCAlQCfVNvs8ioBDNW0c4djqwhuu5ul
-eXwAoLUiDytNWjBXwczWT1ppAg32+9Ek
-=Co+e
+iEYEARECAAYFAk7hJToACgkQSKUOY2OWgPDGpgCgrUv1TMSyhGHBR/i8Mw4yjQEs
+6cUAn1laK/Zr4079HSfCmUqr2ps3CFB2
+=g5Fj
 -----END PGP SIGNATURE-----
