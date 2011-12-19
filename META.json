@@ -1,5 +1,5 @@
 {
-   "abstract" : "Internationalizing Domain Names in Applications (UTS #46)",
+   "abstract" : "Internationalizing Domain Names in Applications (RFC 3490)",
    "author" : [
       "Claus Färber <CFAERBER@cpan.org>"
    ],
@@ -15,8 +15,7 @@
    "name" : "Net-IDN-Encode",
    "no_index" : {
       "directory" : [
-         "eg",
-         "data"
+         "eg"
       ]
    },
    "prereqs" : {
@@ -34,15 +33,14 @@
       },
       "runtime" : {
          "requires" : {
-            "Unicode::Normalize" : "1",
-            "perl" : "5.008003"
+            "Net::IDN::Nameprep" : "1.1"
          }
       }
    },
    "provides" : {
       "Net::IDN::Encode" : {
          "file" : "lib/Net/IDN/Encode.pm",
-         "version" : "1.900_20111218"
+         "version" : "1.102"
       },
       "Net::IDN::Punycode" : {
          "file" : "lib/Net/IDN/Punycode.pm",
@@ -51,21 +49,13 @@
       "Net::IDN::Punycode::PP" : {
          "file" : "lib/Net/IDN/Punycode/PP.pm",
          "version" : "1.001"
-      },
-      "Unicode::UTS46" : {
-         "file" : "lib/Unicode/UTS46.pm",
-         "version" : "1.900_20111218"
-      },
-      "Unicode::UTS46::Mapping" : {
-         "file" : "lib/Unicode/UTS46/Mapping.pm",
-         "version" : "6.000000001"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "1.900_20111212"
+   "version" : "1.102"
 }
