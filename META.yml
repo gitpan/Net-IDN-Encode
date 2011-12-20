@@ -22,22 +22,22 @@ no_index:
 provides:
   Net::IDN::Encode:
     file: lib/Net/IDN/Encode.pm
-    version: 1.900_20111219
+    version: 1.900_20111220
   Net::IDN::Punycode:
     file: lib/Net/IDN/Punycode.pm
     version: 1.001
   Net::IDN::Punycode::PP:
     file: lib/Net/IDN/Punycode/PP.pm
     version: 1.001
-  Unicode::UTS46:
-    file: lib/Unicode/UTS46.pm
+  Net::IDN::UTS46:
+    file: lib/Net/IDN/UTS46.pm
     version: 1.900_20111218
-  Unicode::UTS46::Mapping:
-    file: lib/Unicode/UTS46/Mapping.pm
+  Net::IDN::UTS46::Mapping:
+    file: lib/Net/IDN/UTS46/Mapping.pm
     version: 6.000000001
 requires:
   Unicode::Normalize: 1
   perl: 5.008003
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.900_20111219
+version: 1.900_20111220
