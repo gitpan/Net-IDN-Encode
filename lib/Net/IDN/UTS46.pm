@@ -8,7 +8,7 @@ use warnings;
 
 use Carp;
 
-our $VERSION = "1.900_20111218";
+our $VERSION = "1.900_20111221";
 $VERSION = eval $VERSION;
 
 our $IDNA_prefix = 'xn--';
@@ -214,9 +214,9 @@ sub _validate_contextj {
 	\p{Ccc:Virama}
 	\x{200C}
      |
-	[\p{JoiningType:L}\p{JoiningType:D}]\p{JoiningType:T}*
+	[\p{Joining_Type:L}\p{Joining_Type:D}]\p{Joining_Type:T}*
 	\x{200C}
-	\p{JoiningType:T}*[\p{JoiningType:R}\p{JoiningType:D}]
+	\p{Joining_Type:T}*[\p{Joining_Type:R}\p{Joining_Type:D}]
      |
 	(\x{200C})
     /x and defined($1) and croak sprintf "rule for CONTEXTJ character U+%04X not satisfied [C2]", ord($1);
@@ -238,7 +238,6 @@ sub _validate_contextj {
 #       False;
 #       If Canonical_Combining_Class(Before(cp)) .eq.  Virama Then True;
 
-#  $l =~ m/(?:^|\P{Ccc:Virama})(\x{200D})/ and croak sprintf "rule for CONTEXTJ character U+%04X not satisfied [C2]", ord($1);
   $l =~ m/
 	\p{Ccc:Virama}
 	\x{200D}
