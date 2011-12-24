@@ -1117,6 +1117,4 @@ sub MapMapped { my $l = shift;
   return $l;
 };
 
-=Test
-
 __END__
