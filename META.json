@@ -42,7 +42,7 @@
    "provides" : {
       "Net::IDN::Encode" : {
          "file" : "lib/Net/IDN/Encode.pm",
-         "version" : "1.900_20111224"
+         "version" : "1.999_20111228"
       },
       "Net::IDN::Punycode" : {
          "file" : "lib/Net/IDN/Punycode.pm",
@@ -54,7 +54,7 @@
       },
       "Net::IDN::UTS46" : {
          "file" : "lib/Net/IDN/UTS46.pm",
-         "version" : "1.900_20111224"
+         "version" : "1.999_20111228"
       },
       "Net::IDN::UTS46::Mapping" : {
          "file" : "lib/Net/IDN/UTS46/Mapping.pm",
@@ -67,5 +67,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "1.900_20111224"
+   "version" : "1.999_20111228"
 }
