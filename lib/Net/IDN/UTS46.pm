@@ -1,6 +1,6 @@
 package Net::IDN::UTS46;
 
-require 5.008_001;
+require 5.006;
 
 use strict;
 use utf8;
@@ -8,20 +8,19 @@ use warnings;
 
 use Carp;
 
-our $VERSION = "1.999_20111228";
+our $VERSION = "0.999_20120102";
 $VERSION = eval $VERSION;
 
 our @ISA = ('Exporter');
 our @EXPORT = ();
-our @EXPORT_OK = ('uts46_to_ascii', 'uts46_to_unicode', 'uts46_mapping');
-
-our $IDNA_prefix;
-*IDNA_prefix = \'xn--';
+our @EXPORT_OK = ('uts46_to_ascii', 'uts46_to_unicode');
+our %EXPORT_TAGS = ( 'all' => \@EXPORT_OK );
 
 use Unicode::Normalize 1 ();
 
-use Net::IDN::Punycode 1 ();
-use Net::IDN::UTS46::Mapping 5.002 ('/^(Is).*/');				# UTS #46 is only defined from Unicode 5.2.0
+use Net::IDN::Punycode 1 (':all');
+use Net::IDN::Encode 1.009_2012 (':_var');
+use Net::IDN::UTS46::_Mapping 5.002 ('/^(Is|Map).*/');	# UTS #46 is only defined from Unicode 5.2.0
 
 sub uts46_to_unicode {
   my ($label, %param) = @_;
@@ -44,8 +43,8 @@ sub uts46_to_ascii {
 #
   foreach(@ll) {
     if(m/\P{ASCII}/) {
-      eval { $_ = $IDNA_prefix . Net::IDN::Punycode::encode_punycode($_) };
-      die "$@ [A3]" if $@;
+      eval { $_ = $IDNA_PREFIX . encode_punycode($_) };
+      croak "$@ [A3]" if $@;
       $pass_through = 0;
     }
   }
@@ -62,14 +61,8 @@ sub uts46_to_ascii {
   return $label;
 }
 
-sub uts46_mapping {
-  croak "Too many arguments" if $#_ > 0;
-  goto &_process;
-}
-
 *to_unicode	= \&uts46_to_unicode;
 *to_ascii	= \&uts46_to_ascii;
-*mapping	= \&uts46_mapping;
 
 sub _process {
   my ($label, %param) = @_;
@@ -98,19 +91,22 @@ sub _process {
 
 #   - ignored
 #
-  $label = Net::IDN::UTS46::Mapping::MapIgnored($label);
-  ## $label = Net::IDN::UTS46::Mapping::MapDisallowedSTD3Ignored($label)	if(!$param{'UseSTD3ASCIIRules'});
+  $label = MapIgnored($label);
+  ## $label = MapDisallowedSTD3Ignored($label)	if(!$param{'UseSTD3ASCIIRules'});
 
 #   - mapped
 #
-  $label = Net::IDN::UTS46::Mapping::MapMapped($label);
-  $label = Net::IDN::UTS46::Mapping::MapDisallowedSTD3Mapped($label) 	if(!$param{'UseSTD3ASCIIRules'});
+  $label = MapMapped($label);
+  $label = MapDisallowedSTD3Mapped($label) 	if(!$param{'UseSTD3ASCIIRules'});
 
 #  - deviation
-  $label = Net::IDN::UTS46::Mapping::MapDeviation($label)		if($param{'TransitionalProcessing'});
+  $label = MapDeviation($label)			if($param{'TransitionalProcessing'});
 
 # 2. Normalize
 #
+
+## TODO: replace with own implementation in _Mapping
+##
   $label = Unicode::Normalize::NFC($label);
 
 # 3. Break
@@ -121,17 +117,19 @@ sub _process {
 #
   my $bidi = 0;
 
-  foreach (@ll) {
-    if(m/^$IDNA_prefix(\p{ASCII}+)$/oi) {
-      eval { $_ = Net::IDN::Punycode::decode_punycode($1); };
-      _validate_label($_,%param,
+  foreach my $l (@ll) {
+    if($l =~ m/^$IDNA_PREFIX(\p{ASCII}+)$/oi) {
+      eval { $l = decode_punycode($1); };
+      croak 'Invalid Punycode sequence [P4]' if $@;
+
+      _validate_label($l, %param,
 	'TransitionalProcessing' => 0,
 	'AllowUnassigned' => 0,			## keep the Punycode version
       ) unless $@;
     } else {
-      _validate_label($_,%param,'_AssumeNFC' => 1);
+      _validate_label($l,%param,'_AssumeNFC' => 1);
     }
-    $bidi++ if !$bidi && m/[\p{Bc:R}\p{Bc:AL}\p{Bc:AN}]/;
+    $bidi++ if !$bidi && ($l =~ m/[\p{Bc:R}\p{Bc:AL}\p{Bc:AN}]/);
   }
 
   if($bidi) {
@@ -183,7 +181,7 @@ sub _validate_bidi {
   no warnings 'utf8';
   return 1 unless length($l);
 
-  $l =~ m/^(?:(\p{Bc:L})|\p{Bc:R}|\p{Bc:AL})/ or die 'starts with character of wrong bidi class [B1]';
+  $l =~ m/^(?:(\p{Bc:L})|\p{Bc:R}|\p{Bc:AL})/ or croak 'starts with character of wrong bidi class [B1]';
 
   if(!defined $1) { # RTL
     $l =~ m/[^\p{Bc:R}\p{Bc:AL}\p{Bc:AN}\p{Bc:EN}\p{Bc:ES}\p{Bc:CS}\p{Bc:ET}\p{Bc:ON}\p{Bc:BN}\p{Bc:NSM}]/ and croak 'contains characters with wrong bidi class for RTL [B2]';
@@ -376,13 +374,6 @@ does not define transitional processing for ToUnicode.
 
 =back
 
-=item uts46_mapping( $label ) 
-
-Implements the "Preprocessing for IDNA2008" from UTS #46, section 4.4. It will
-prepare a domain name for subsequent processing with IDNA2008.
-
-This function currently does not take any parameters.
-
 =back
 
 =head1 UNICODE CHARACTER PROPERTIES
@@ -429,7 +420,7 @@ Claus FE<auml>rber <CFAERBER@cpan.org>
 
 =head1 LICENSE
 
-Copyright 2011 Claus FE<auml>rber.
+Copyright 2011-2012 Claus FE<auml>rber.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

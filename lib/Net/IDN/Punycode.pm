@@ -7,12 +7,15 @@ use utf8;
 use warnings;
 
 use Exporter;
-our $VERSION = "1.001";
+
+our $VERSION = "1.009_20120107";
+$VERSION = eval $VERSION;
 
 our @ISA = qw(Exporter);
 our @EXPORT = ();
-our @EXPORT_OK = qw(encode_punycode decode_punycode);
-our %EXPORT_TAGS = ( 'all' => \@EXPORT_OK );
+our @EXPORT_OK = ();
+our %EXPORT_TAGS = ( 'all'  => [ qw(encode_punycode decode_punycode) ], );
+Exporter::export_ok_tags(keys %EXPORT_TAGS);
 
 eval { 
   require XSLoader;
@@ -39,16 +42,27 @@ Net::IDN::Punycode - A Bootstring encoding of Unicode for IDNA (S<RFC 3492>)
 
 =head1 DESCRIPTION
 
-This module implements the Punycode encoding. Punycode is an
-instance of a more general algorithm called Bootstring, which
-allows strings composed from a small set of "basic" code points to
-uniquely represent any string of code points drawn from a larger
-set.  Punycode is Bootstring with particular parameter values
-appropriate for IDNA.
+This module implements the Punycode encoding. Punycode is an instance of a more
+general algorithm called Bootstring, which allows strings composed from a small
+set of "basic" code points to uniquely represent any string of code points
+drawn from a larger set. Punycode is Bootstring with particular parameter
+values appropriate for IDNA.
 
-Note that this module does not do any string preparation as
-specified by I<nameprep>/I<stringprep>. It does not do add any
-prefix or suffix, either.
+Note that this module does not do any string preparation as specified by
+I<Nameprep>/I<IDNA2008>/I<PRECIS> and does not add nor remove the ACE prefix
+(C<xn-->). Thus, use L<Net::IDN::Encode> if you want to convert domain names.
+
+=head1 WARNING
+
+Usually, it is not a good idea to use this module directly. If you convert
+domain labels (or other strings) without proper prepration, you may end up with
+an ASCII encoding that is not interoperable or even poses security issues due
+to spoofing.
+
+Even if you think that your domain names are valid and already mapped to the
+correct form, you might be fooled by different Unicode normalization forms (for
+example, some environments might automatically convert your data to NFD, which
+breaks IDNA).
 
 =head1 FUNCTIONS
 
@@ -57,13 +71,13 @@ or import them individually.
 
 The following functions are available:
 
-=over 4
+=over
 
 =item encode_punycode($input)
 
-Decodes C<$input> with Punycode and returns the result.
+Encodes C<$input> with Punycode and returns the result.
 
-This function will throw an exception on invalid input.
+This function will throw an exception on invalid/unencodable input.
 
 =item decode_punycode($input)
 
@@ -77,13 +91,13 @@ This function will throw an exception on invalid input.
 
 Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt> (versions 0.01 to 0.02)
 
-Claus FE<auml>rber E<lt>CFAERBER@cpan.orgE<gt> (from version 1.00)
+Claus FE<auml>rber E<lt>CFAERBER@cpan.orgE<gt> (versions 1.000 and higher)
 
 =head1 LICENSE
 
 Copyright 2002-2004 Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
 
-Copyright 2007-2010 Claus FE<auml>rber E<lt>CFAERBER@cpan.orgE<gt>
+Copyright 2007-2012 Claus FE<auml>rber E<lt>CFAERBER@cpan.orgE<gt>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
