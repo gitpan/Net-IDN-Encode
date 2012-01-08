@@ -22,7 +22,7 @@ no_index:
 provides:
   Net::IDN::Encode:
     file: lib/Net/IDN/Encode.pm
-    version: 1.999_20120107
+    version: 1.999_20120108
   Net::IDN::Punycode:
     file: lib/Net/IDN/Punycode.pm
     version: 1.009_20120107
@@ -37,4 +37,4 @@ requires:
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.999_20120107
+version: 1.999_20120108
