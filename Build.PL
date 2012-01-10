@@ -17,13 +17,15 @@ my $b = Module::Build->new(
 	'create_makefile_pl' => 'traditional',
 
 	'requires'	=> {
-		'Unicode::Normalize' => 1,
+		'Unicode::Normalize' => undef,
 		'perl'	=> 5.006,
 	},
 	'build_requires' => {
 		'Test::More' => 0, 
 		'Test::NoWarnings' => 0,
 	},
+	'needs_compiler' => undef,
+
 	'PL_Files' => {
 		'lib/Unicode/UTS46/Mapping.PL'  => [
 			 'lib/Unicode/UTS46/Mapping.pm',

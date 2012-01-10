@@ -34,7 +34,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Unicode::Normalize" : "1",
+            "Unicode::Normalize" : 0,
             "perl" : "5.006"
          }
       }
@@ -42,7 +42,7 @@
    "provides" : {
       "Net::IDN::Encode" : {
          "file" : "lib/Net/IDN/Encode.pm",
-         "version" : "2.000"
+         "version" : "2.000_20120110"
       },
       "Net::IDN::Punycode" : {
          "file" : "lib/Net/IDN/Punycode.pm",
@@ -57,11 +57,11 @@
          "version" : "1.000"
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.000"
+   "version" : "2.000_20120110"
 }
