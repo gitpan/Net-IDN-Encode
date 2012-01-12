@@ -193,9 +193,9 @@ is(eval{uts46_to_ascii("A⒈Com", %p)},	undef,	"to_ascii\(\'A⒈Com\'\)\ throws\
 is(eval{uts46_to_ascii("xn--a-ecp.ru", %p)},	undef,	"to_ascii\(\'xn\-\-a\-ecp\.ru\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:253\]") or ($@ and diag($@));
 is(eval{uts46_to_ascii("XN--A-ECP.RU", %p)},	undef,	"to_ascii\(\'XN\-\-A\-ECP\.RU\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:254\]") or ($@ and diag($@));
 is(eval{uts46_to_ascii("Xn--A-Ecp.ru", %p)},	undef,	"to_ascii\(\'Xn\-\-A\-Ecp\.ru\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:255\]") or ($@ and diag($@));
-SKIP: { skip "requires perl 5.008, this is only perl $]", 1 if $] < 5.008; is(eval{uts46_to_ascii("xn--0.pt", %p)},	undef,	"to_ascii\(\'xn\-\-0\.pt\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:256\]") or ($@ and diag($@)); }
-SKIP: { skip "requires perl 5.008, this is only perl $]", 1 if $] < 5.008; is(eval{uts46_to_ascii("XN--0.PT", %p)},	undef,	"to_ascii\(\'XN\-\-0\.PT\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:257\]") or ($@ and diag($@)); }
-SKIP: { skip "requires perl 5.008, this is only perl $]", 1 if $] < 5.008; is(eval{uts46_to_ascii("Xn--0.Pt", %p)},	undef,	"to_ascii\(\'Xn\-\-0\.Pt\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:258\]") or ($@ and diag($@)); }
+is(eval{uts46_to_ascii("xn--0.pt", %p)},	undef,	"to_ascii\(\'xn\-\-0\.pt\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:256\]") or ($@ and diag($@));
+is(eval{uts46_to_ascii("XN--0.PT", %p)},	undef,	"to_ascii\(\'XN\-\-0\.PT\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:257\]") or ($@ and diag($@));
+is(eval{uts46_to_ascii("Xn--0.Pt", %p)},	undef,	"to_ascii\(\'Xn\-\-0\.Pt\'\)\ throws\ error\ A3\ \[data\/IdnaTest\.txt\:258\]") or ($@ and diag($@));
 is(eval{uts46_to_ascii("xn--a.pt", %p)},	undef,	"to_ascii\(\'xn\-\-a\.pt\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:259\]") or ($@ and diag($@));
 is(eval{uts46_to_ascii("XN--A.PT", %p)},	undef,	"to_ascii\(\'XN\-\-A\.PT\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:260\]") or ($@ and diag($@));
 is(eval{uts46_to_ascii("Xn--A.pt", %p)},	undef,	"to_ascii\(\'Xn\-\-A\.pt\'\)\ throws\ error\ V6\ \[data\/IdnaTest\.txt\:261\]") or ($@ and diag($@));
