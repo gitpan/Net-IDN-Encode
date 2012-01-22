@@ -42,7 +42,7 @@
    "provides" : {
       "Net::IDN::Encode" : {
          "file" : "lib/Net/IDN/Encode.pm",
-         "version" : "2.002"
+         "version" : "2.003"
       },
       "Net::IDN::Punycode" : {
          "file" : "lib/Net/IDN/Punycode.pm",
@@ -63,5 +63,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.002"
+   "version" : "2.003"
 }
