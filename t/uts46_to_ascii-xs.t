@@ -15,6 +15,11 @@ BEGIN {
 use Test::More tests => 615 + 1;
 use Test::NoWarnings;
 use Net::IDN::UTS46 (':all');
+BEGIN { 
+	plan skip_all => 'no XS version' if eval {
+		\&Net::IDN::Punycode::encode_punycode ==
+		\&Net::IDN::Punycode::PP::encode_punycode; }
+}
 no warnings 'utf8';
 
 my %p = ("TransitionalProcessing" => "0");
