@@ -12,24 +12,24 @@ the distribution may already have been compromised, and you should
 not run its Makefile.PL or Build.PL.
 
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
+Hash: SHA256
 
 SHA1 04a13098c55c43968a5e156a521f92dbade4c0bb Build.PL
-SHA1 1b56a572c56390efbe41669365809c0546a5830c Changes
+SHA1 fe4e87036745e704a0a365de8b5aea8ca35effca Changes
 SHA1 296afab11451d2129927fd8ae8d387caa797ed2b LICENSE
-SHA1 b947efa2ea37142ead6dfab2e1bc3ef6ccf2666b MANIFEST
-SHA1 5c0604a888f13a7a54e9d65b1f06a2f7ec4e383a META.json
-SHA1 322caf8343d4aa539c4c4013fac466c6288c72ed META.yml
+SHA1 4fe403f06c383995af941f0c7126bcfbd9fdb39b MANIFEST
+SHA1 f7ea2ae00251f1728cb9d5e6b746bb37a884ecff META.json
+SHA1 fdb4f438fd7a1b6ccba187939cb290e3b05cf29d META.yml
 SHA1 50546a23d429c141e906489947533515b1cd7bdf Makefile.PL
 SHA1 1bbf99c0d4229d3f9f267fbe3d72507e30dd212a README
 SHA1 c7825316b854216c50a88b5750c3a08a91e56695 eg/hello_idn.pl
 SHA1 da626e4a67218dc2ed50b4a5b45b258078db0681 eg/hello_idn_email.pl
-SHA1 9fcc46b1b0146ceefa90dc1f6847e4f39095a95b lib/Net/IDN/Encode.pm
+SHA1 0b1036070a4aed6e699bb7806d8e4a68670352b8 lib/Net/IDN/Encode.pm
 SHA1 0894f8f6a6627162b5bbf1a87a41ea67e34447bb lib/Net/IDN/Overview.pod
 SHA1 a7eaecc1c9628ddfbe6a480e524ebdcbfbf8252c lib/Net/IDN/Punycode.pm
 SHA1 db9d9bf46f50ec3c95c2d49995fe1b13bd3639f0 lib/Net/IDN/Punycode.xs
 SHA1 982e1ce970d4083c85ffe0cae6ccce1cbf034af2 lib/Net/IDN/Punycode/PP.pm
-SHA1 cf68974392077c4fa2601a8bcad336e056ea33be lib/Net/IDN/Standards.pod
+SHA1 dada16900da3525b864719d2811402f64a125b4e lib/Net/IDN/Standards.pod
 SHA1 807be0c4da5aa61a97b9aa20a8c24b8537aa5b90 lib/Net/IDN/UTS46.pm
 SHA1 199e883ccde763f93054bb8f2ec81ad667c2f2ee lib/Net/IDN/UTS46/_Mapping.pm
 SHA1 aee3164d2582e59a5cacc389f455a54d5a3e42e5 t/00use.t
@@ -47,11 +47,15 @@ SHA1 832f448cbe5b33956124c91a1e6b93d3e7e690ef t/uts46_encode_utf8.t
 SHA1 a340c8fc9038203edffddcede80a848c30414ece t/uts46_to_ascii-trans.t
 SHA1 6696bb0b3a467cbc2823dd6ca65303bc29890394 t/uts46_to_ascii.t
 SHA1 f63d1172d3eed103b6e784a2dac80da1e15e4407 t/uts46_to_unicode.t
-SHA1 245b13d82d5ab98b510dc4b0221cab1ffd347237 t/xtra_pp.t
+SHA1 78b38661bed27d4b86f819fc3a0778c9c50ca34a t/xtra-pp.t
+SHA1 883e394cd616e76b7cec2b0b6abad860c1dab8f2 t/xtra-xs.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.14 (Darwin)
 
-iEYEARECAAYFAlIJNKUACgkQSKUOY2OWgPC/bgCePQDv0ggJP8qZYRnYMAecN+Zd
-NIQAn2bds7d/k4YabOQ1f8f5Ze1zqYeL
-=YGCL
+iQEcBAEBCAAGBQJSc/NSAAoJEIS+srvgrWBmkWMH/iT1SjoAInRl9yR7CMij1gxH
+VeuFMqjcT3KHuwwSLAsd82GUFbC/x8EY1fzWFO/t65MXB7ft5x87SsxkVI0hXPvj
+ia4S8NexLSXUlWJqVBnX952IWq0qWiBb0RwYHvnrblb3gIjkWkHX2bPe/frtigSn
+ZCaQwtHZ9RzGs1WU3Jfxrb6/IpXXsawzEzIyuqTuBEwt4IKz6WEHNjIIl+qa9q16
+mp3rTE1Dk2C94qnO0ODgcPBF17K5Gaki+zkum2Gf5TVsAan89g+GlEku9ISzUU1b
+VORR/t2fcRhjaVKxO+gTfjBm2DnqH9FrTUZk1kHP+4Tullr1WMR8W4r6R3Y3M+c=
+=zeT9
 -----END PGP SIGNATURE-----
