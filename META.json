@@ -4,7 +4,7 @@
       "Claus Färber <CFAERBER@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "Module::Build version 0.4203",
    "license" : [
       "perl_5"
    ],
@@ -29,7 +29,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "Module::Build" : "0.42"
          }
       },
       "runtime" : {
@@ -39,29 +39,11 @@
          }
       }
    },
-   "provides" : {
-      "Net::IDN::Encode" : {
-         "file" : "lib/Net/IDN/Encode.pm",
-         "version" : "2.005"
-      },
-      "Net::IDN::Punycode" : {
-         "file" : "lib/Net/IDN/Punycode.pm",
-         "version" : "1.100"
-      },
-      "Net::IDN::Punycode::PP" : {
-         "file" : "lib/Net/IDN/Punycode/PP.pm",
-         "version" : "1.100"
-      },
-      "Net::IDN::UTS46" : {
-         "file" : "lib/Net/IDN/UTS46.pm",
-         "version" : "1.000"
-      }
-   },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.005"
+   "version" : "2.099_20131225"
 }
