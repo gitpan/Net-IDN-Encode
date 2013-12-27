@@ -15,28 +15,28 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA256
 
 SHA1 04a13098c55c43968a5e156a521f92dbade4c0bb Build.PL
-SHA1 55cd95569f188b3e590d36613ea14859d1339823 Changes
+SHA1 4117ca6df005a464af2b2b9cc580d6fa65cb1f15 Changes
 SHA1 296afab11451d2129927fd8ae8d387caa797ed2b LICENSE
 SHA1 b947efa2ea37142ead6dfab2e1bc3ef6ccf2666b MANIFEST
-SHA1 34f2fea516555792845cd1b787f620ca11cd5cab META.json
-SHA1 b53c0ba89427fe270eaa76be27ce1602cd3a18ca META.yml
+SHA1 35b43e9277d895807f569e4f4568ce77ef9ea655 META.json
+SHA1 8ffaaa9bbee614c9d16a321b91bddeb481ee16c2 META.yml
 SHA1 a89d5d53a5eb1642da87327947cb44113f66e539 Makefile.PL
 SHA1 1bbf99c0d4229d3f9f267fbe3d72507e30dd212a README
 SHA1 c7825316b854216c50a88b5750c3a08a91e56695 eg/hello_idn.pl
 SHA1 da626e4a67218dc2ed50b4a5b45b258078db0681 eg/hello_idn_email.pl
-SHA1 2588cb96885cf2eb07f23d979c4ccebea229f653 lib/Net/IDN/Encode.pm
+SHA1 ff630830637676f4861cecbfcf3ac5a13938b672 lib/Net/IDN/Encode.pm
 SHA1 0894f8f6a6627162b5bbf1a87a41ea67e34447bb lib/Net/IDN/Overview.pod
 SHA1 a7eaecc1c9628ddfbe6a480e524ebdcbfbf8252c lib/Net/IDN/Punycode.pm
 SHA1 db9d9bf46f50ec3c95c2d49995fe1b13bd3639f0 lib/Net/IDN/Punycode.xs
 SHA1 982e1ce970d4083c85ffe0cae6ccce1cbf034af2 lib/Net/IDN/Punycode/PP.pm
 SHA1 dada16900da3525b864719d2811402f64a125b4e lib/Net/IDN/Standards.pod
-SHA1 3a6fca63ff225fe1dd004d9e20e364bd6910ce8a lib/Net/IDN/UTS46.pm
+SHA1 708996c2fa45a430139c46b75311b4eae9ff1de4 lib/Net/IDN/UTS46.pm
 SHA1 11a178ac586671628f68fbf3f1eb3b54ef76b72e lib/Net/IDN/UTS46/_Mapping.pm
 SHA1 aee3164d2582e59a5cacc389f455a54d5a3e42e5 t/00use.t
 SHA1 4bf2ce7aa9320362cccabd1e8a1b623192584890 t/10pod.t
-SHA1 66eed00a037a1282487bb287436672d7be42a6bf t/11pod_cover.t
-SHA1 61fddf36971509e81764000f8edbaf451e5493e5 t/domain_to_ascii.t
-SHA1 38b778d9f5072326c720ef358c79bd787dc93e83 t/domain_to_unicode.t
+SHA1 7b363ec736008d60ede786cd9e62ae8db99e7628 t/11pod_cover.t
+SHA1 42c6a0a5c049f8e43ee1197a3f25600527d9a58c t/domain_to_ascii.t
+SHA1 4984ddb57d80f5514c6362fc72b63381fc2dc078 t/domain_to_unicode.t
 SHA1 fb78f4beb7b62f5e04fae4e6d891fad869d0a9e3 t/encode_bytes.t
 SHA1 9cc5d106c594c43370fc135adf44d2f61372cfa7 t/encode_utf8.t
 SHA1 11738a334df75b930f65a8b771e8dd10f99c2e5a t/punycode_vec-pp.t
@@ -44,17 +44,17 @@ SHA1 3c025aafc4c0fef62d65a133605a9cc1d4234ee9 t/punycode_vec-xs.t
 SHA1 30a64f88f0f7391d4adeefd13580d6542b799fcb t/uts46_api_call.t
 SHA1 2f80c8ce0c4006fe9b0ad35dd470c21f1456aec3 t/uts46_encode_bytes.t
 SHA1 832f448cbe5b33956124c91a1e6b93d3e7e690ef t/uts46_encode_utf8.t
-SHA1 01e51098dfcd3b746ec788a3e0d00deb0403711b t/uts46_to_ascii-trans.t
-SHA1 31d035c4076df5b1c91f8007be8b052183c65c79 t/uts46_to_ascii.t
-SHA1 74dc5e53019716db30243e3552a7fdc4e71bf23e t/uts46_to_unicode.t
+SHA1 1e1aa47409cfb29d959045b0e959cb63bd2e1892 t/uts46_to_ascii-trans.t
+SHA1 7787af2975880eb70fa0adf421ca169e26c5e20a t/uts46_to_ascii.t
+SHA1 ffee4687c6ec8e2db278d4e3b5ae232e80821cfd t/uts46_to_unicode.t
 SHA1 245b13d82d5ab98b510dc4b0221cab1ffd347237 t/xtra_pp.t
 -----BEGIN PGP SIGNATURE-----
 
-iQEcBAEBCAAGBQJSu0g5AAoJEIS+srvgrWBmcGoH/0j4U+ygCuxkwEQVkuLobhgO
-cbv9PuqqYDsl2lskNq6P6Yg5F8+FGjQ9oSFd9ZW7NZCyhpvkmBkhLrWmjioyubDf
-pirtia2uXt50CmwKdZ6eoSZLRHMd5wfKhM3yKeXnoCUgC1B0TqBJGckYc6GKVfVj
-hbo+6vfwH6drYcEGm5cJe8uZ3rpC1PLCkxNiDbJSB641cBRRAh1O3a7hT9cL34bJ
-QAhb3c6MelKP1X/X1qiEiKy0qKTpOe8jBMZfOIBj7NOMC3hM+O+2iQZ0ZTi9Vbsx
-wUFAPRXtZn7vgbBI6KneKOnsFh1V5flwcuDGi9hQBRyz5k4s+wHb01agyL6IFDY=
-=/p2R
+iQEcBAEBCAAGBQJSvMeVAAoJEIS+srvgrWBmadAIAIBGfocpoeybxwgtuUsNUnV8
+SzuscTeLk5BMqsmPdzQRrEY2B6O3GsnFNGSmOUu0zScfVdvpRKumHCwyOQqLSsi3
+P/FTzMhVVV+XuMTO0ddeLZxFJW3uIOiXkj3vLPFrxJwYHLKLFljCWKkruoVT/1XV
+wxnTIUW0Fi7ffA0gLEqsacy8YGg6yvW8iDbJUskcKo8EOCdfExfGXgeOWRVojxO9
+RCE8mV+WxaE0VBbGDQ8v+lJ3EhiM2neRO7BDgqRmzneh5IoEsA2oK1EPvXXoJSY3
+X/CQIpEMaRnXliW2Spr64FxdMyz1l/0ChjWTmuzpPjoYfsFEnn97eNfgW0xHqX0=
+=I3yP
 -----END PGP SIGNATURE-----
