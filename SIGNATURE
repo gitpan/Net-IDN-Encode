@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,46 +15,46 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA256
 
 SHA1 04a13098c55c43968a5e156a521f92dbade4c0bb Build.PL
-SHA1 4117ca6df005a464af2b2b9cc580d6fa65cb1f15 Changes
+SHA1 10042abaf98344e978d04c89d9d4ebe5a4914da2 Changes
 SHA1 296afab11451d2129927fd8ae8d387caa797ed2b LICENSE
 SHA1 b947efa2ea37142ead6dfab2e1bc3ef6ccf2666b MANIFEST
-SHA1 35b43e9277d895807f569e4f4568ce77ef9ea655 META.json
-SHA1 8ffaaa9bbee614c9d16a321b91bddeb481ee16c2 META.yml
-SHA1 a89d5d53a5eb1642da87327947cb44113f66e539 Makefile.PL
-SHA1 1bbf99c0d4229d3f9f267fbe3d72507e30dd212a README
+SHA1 99aa60c3c90ea0ff329cca2e5f94f8865b4bf5fb META.json
+SHA1 21347d1c76dc296828d8fbde2aa1a472eeeabbc6 META.yml
+SHA1 751e75626778feefe27408881068c0b0514a2dff Makefile.PL
+SHA1 3807b576f4488318a73d35db802b2609e2560070 README
 SHA1 c7825316b854216c50a88b5750c3a08a91e56695 eg/hello_idn.pl
 SHA1 da626e4a67218dc2ed50b4a5b45b258078db0681 eg/hello_idn_email.pl
-SHA1 ff630830637676f4861cecbfcf3ac5a13938b672 lib/Net/IDN/Encode.pm
+SHA1 bc885e74ccd8611cb3e5c693f8238bb6f0f62c56 lib/Net/IDN/Encode.pm
 SHA1 0894f8f6a6627162b5bbf1a87a41ea67e34447bb lib/Net/IDN/Overview.pod
-SHA1 a7eaecc1c9628ddfbe6a480e524ebdcbfbf8252c lib/Net/IDN/Punycode.pm
-SHA1 db9d9bf46f50ec3c95c2d49995fe1b13bd3639f0 lib/Net/IDN/Punycode.xs
+SHA1 f0f3fce7868cf66d8ac09ab577c3bc2fade4f927 lib/Net/IDN/Punycode.pm
+SHA1 f94e372e5e1a2ab4b0179b82e9b3de09ef9513bc lib/Net/IDN/Punycode.xs
 SHA1 982e1ce970d4083c85ffe0cae6ccce1cbf034af2 lib/Net/IDN/Punycode/PP.pm
 SHA1 dada16900da3525b864719d2811402f64a125b4e lib/Net/IDN/Standards.pod
-SHA1 708996c2fa45a430139c46b75311b4eae9ff1de4 lib/Net/IDN/UTS46.pm
-SHA1 11a178ac586671628f68fbf3f1eb3b54ef76b72e lib/Net/IDN/UTS46/_Mapping.pm
+SHA1 98f73cc400c6f07805cf32da174fd8c48042d496 lib/Net/IDN/UTS46.pm
+SHA1 30fb85a68dad3e40a98ab4b4147f3491d5c2f13f lib/Net/IDN/UTS46/_Mapping.pm
 SHA1 aee3164d2582e59a5cacc389f455a54d5a3e42e5 t/00use.t
 SHA1 4bf2ce7aa9320362cccabd1e8a1b623192584890 t/10pod.t
 SHA1 7b363ec736008d60ede786cd9e62ae8db99e7628 t/11pod_cover.t
 SHA1 42c6a0a5c049f8e43ee1197a3f25600527d9a58c t/domain_to_ascii.t
 SHA1 4984ddb57d80f5514c6362fc72b63381fc2dc078 t/domain_to_unicode.t
-SHA1 fb78f4beb7b62f5e04fae4e6d891fad869d0a9e3 t/encode_bytes.t
+SHA1 659313cde51535a32053b02c07991da57725c214 t/encode_bytes.t
 SHA1 9cc5d106c594c43370fc135adf44d2f61372cfa7 t/encode_utf8.t
 SHA1 11738a334df75b930f65a8b771e8dd10f99c2e5a t/punycode_vec-pp.t
 SHA1 3c025aafc4c0fef62d65a133605a9cc1d4234ee9 t/punycode_vec-xs.t
 SHA1 30a64f88f0f7391d4adeefd13580d6542b799fcb t/uts46_api_call.t
-SHA1 2f80c8ce0c4006fe9b0ad35dd470c21f1456aec3 t/uts46_encode_bytes.t
+SHA1 c49ae1e907113abe82c0081a7842b1f2c66d94ab t/uts46_encode_bytes.t
 SHA1 832f448cbe5b33956124c91a1e6b93d3e7e690ef t/uts46_encode_utf8.t
-SHA1 1e1aa47409cfb29d959045b0e959cb63bd2e1892 t/uts46_to_ascii-trans.t
-SHA1 7787af2975880eb70fa0adf421ca169e26c5e20a t/uts46_to_ascii.t
-SHA1 ffee4687c6ec8e2db278d4e3b5ae232e80821cfd t/uts46_to_unicode.t
+SHA1 df7dcecc51df1eea73d643cd51000580bdfedbf1 t/uts46_to_ascii-trans.t
+SHA1 cb9fe694ece3dbe931d6cd71628718456a8a9d3a t/uts46_to_ascii.t
+SHA1 817e6b14ea0565dfac581b5b8d0eaebe2911d9ec t/uts46_to_unicode.t
 SHA1 245b13d82d5ab98b510dc4b0221cab1ffd347237 t/xtra_pp.t
 -----BEGIN PGP SIGNATURE-----
 
-iQEcBAEBCAAGBQJSvMeVAAoJEIS+srvgrWBmadAIAIBGfocpoeybxwgtuUsNUnV8
-SzuscTeLk5BMqsmPdzQRrEY2B6O3GsnFNGSmOUu0zScfVdvpRKumHCwyOQqLSsi3
-P/FTzMhVVV+XuMTO0ddeLZxFJW3uIOiXkj3vLPFrxJwYHLKLFljCWKkruoVT/1XV
-wxnTIUW0Fi7ffA0gLEqsacy8YGg6yvW8iDbJUskcKo8EOCdfExfGXgeOWRVojxO9
-RCE8mV+WxaE0VBbGDQ8v+lJ3EhiM2neRO7BDgqRmzneh5IoEsA2oK1EPvXXoJSY3
-X/CQIpEMaRnXliW2Spr64FxdMyz1l/0ChjWTmuzpPjoYfsFEnn97eNfgW0xHqX0=
-=I3yP
+iQEcBAEBCAAGBQJSvenyAAoJEIS+srvgrWBmF/8H/0Jp06jMtwAMXpyNw4N44To+
+dmao9jBakSbDAqiI2IlWyXr+dATz49EdqZQ8Bwn3/Z8XoPCFTNfxSYRnRqEDJSI0
+E1VBnCRN32TZ0RePRzjhg7LHxd65kf27GCw43/trsOQPFRhw6k+C4kV7n1TOuvOW
+KvDWA+F8Hf2IZDo6p+RuLaJ9TH+ZbOut3zzcfslzHlFnO1H+S+tUGWQj440jRU9X
+CiVQb4TudYdPRItXwNH924kpgLEUcCm0S18xdyXCSQOzO3AdlaAwtjbWp8iZd9NJ
+rX0pJz2BVLpiqx2pKXBiddonxKY2neH2iHa3zi+mD/lkrSpZ/VBvJj0bOzSiXmE=
+=+X0n
 -----END PGP SIGNATURE-----
