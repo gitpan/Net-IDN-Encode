@@ -4,15 +4,15 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
   'PREREQ_PM' => {
+                   'Test::More' => 0,
                    'ExtUtils::CBuilder' => 0,
-                   'Unicode::Normalize' => 0,
                    'Test::NoWarnings' => 0,
-                   'Test::More' => 0
+                   'Unicode::Normalize' => 0
                  },
-  'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],
-  'VERSION_FROM' => 'lib/Net/IDN/Encode.pm',
+  'PL_FILES' => {},
+  'INSTALLDIRS' => 'site',
   'NAME' => 'Net::IDN::Encode',
-  'PL_FILES' => {}
+  'VERSION_FROM' => 'lib/Net/IDN/Encode.pm'
 )
 ;
