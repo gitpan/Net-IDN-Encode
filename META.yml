@@ -24,4 +24,4 @@ requires:
   perl: 5.008005
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.199_20140618
+version: 2.200
