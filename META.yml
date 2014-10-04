@@ -3,25 +3,25 @@ abstract: 'Internationalizing Domain Names in Applications (UTS #46)'
 author:
   - 'Claus Färber <CFAERBER@cpan.org>'
 build_requires:
-  ExtUtils::CBuilder: 0
-  Test::More: 0
-  Test::NoWarnings: 0
+  ExtUtils::CBuilder: '0'
+  Test::More: '0'
+  Test::NoWarnings: '0'
 configure_requires:
-  Module::Build: 0.42
+  Module::Build: '0.42'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4208, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Module::Build version 0.421, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Net-IDN-Encode
 no_index:
   directory:
     - eg
     - data
 requires:
-  Unicode::Normalize: 0
-  perl: 5.008005
+  Unicode::Normalize: '0'
+  perl: '5.008005'
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.201
+version: 2.201_20141004
